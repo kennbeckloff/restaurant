@@ -15,10 +15,9 @@ function NavBar({ user, setUser,reviewCount }) {
   return (
     <Wrapper>
       <Logo>
-        <Link to="/">Restaurants</Link>
+        <Link to="/">Eaters_inn</Link>
       </Logo>
       <Nav>
-        <h3>{reviewCount} Reviews</h3>
         <Button as={Link} to="/new">
         Add Review
         </Button>
@@ -43,7 +42,7 @@ const Logo = styled.h1`
   line-height: 1;
 
   a {
-    color: inherit;
+    color: darkslategray;
     text-decoration: none;
   }
 `;
@@ -52,6 +51,7 @@ const Nav = styled.nav`
   display: flex;
   gap: 4px;
   position: absolute;
+  color: darkslategray;
   right: 8px;
 `;
 

@@ -55,7 +55,7 @@ function SignUpForm({ onLogin }) {
         />
       </FormField>
       <FormField>
-        <Label htmlFor="password">Password Confirmation</Label>
+        <Label htmlFor="password">Verify Password</Label>
         <Input
           type="password"
           id="password_confirmation"

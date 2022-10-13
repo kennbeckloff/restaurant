@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Login from "../pages/Login";
-import NewReviewForm from "./NewReviewForm";
-import ReviewItem from "./ReviewItem";
+// import NewReviewForm from "../pages/NewReviewForm";
+// import ReviewItem from "../pages/ReviewItem";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,10 +25,12 @@ function App() {
       <main>
         <Switch>
           <Route path="/new">
-            <NewReviewForm user={setUser}/>            
+            <h2>Home</h2>
+            {/* <NewReviewForm user={setUser}/>             */}
           </Route>
           <Route path="/">
-            <ReviewItem />
+            <h2>Home</h2>
+            {/* <ReviewItem /> */}
           </Route>
         </Switch>
       </main>

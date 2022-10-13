@@ -9,7 +9,7 @@ function Login({ onLogin }) {
 
   return (
     <Wrapper>
-      <Logo>Restaurant</Logo>
+      <Logo>Eaters_inn</Logo>
       {showLogin ? (
         <>
           <LoginForm onLogin={onLogin} />
@@ -40,6 +40,7 @@ function Login({ onLogin }) {
 const Logo = styled.h1`
   font-size: 3rem;
   margin: 8px 0 16px;
+  color: darkslategray;
 `;
 
 const Wrapper = styled.section`
@@ -51,7 +52,7 @@ const Wrapper = styled.section`
 const Divider = styled.hr`
   border: none;
   border-bottom: 1px solid #ccc;
-  margin: 16px 0;
+  margin: 20px 0;
 `;
 
 export default Login;
