@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles";
 
-function NavBar({ user, setUser }) {
+function NavBar({ user, setUser,reviewCount }) {
   function handleLogoutClick() {
     fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
@@ -15,14 +15,12 @@ function NavBar({ user, setUser }) {
   return (
     <Wrapper>
       <Logo>
-        <Link to="/">Neighbourhood_Restaurants</Link>
+        <Link to="/">Restaurants</Link>
       </Logo>
       <Nav>
+        <h3>{reviewCount} Reviews</h3>
         <Button as={Link} to="/new">
-          About
-        </Button>
-        <Button as={Link} to="/new">
-        View Restaurants
+        Add Review
         </Button>
         <Button variant="outline" onClick={handleLogoutClick}>
           Logout
