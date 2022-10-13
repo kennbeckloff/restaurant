@@ -25,7 +25,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/new">
-            <NewReviewForm />            
+            <NewReviewForm user={setUser}/>            
           </Route>
           <Route path="/">
             <ReviewItem />
