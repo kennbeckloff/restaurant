@@ -33,11 +33,11 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 3px;
 `;
 
 const Logo = styled.h1`
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0;
   line-height: 1;
 
@@ -52,7 +52,7 @@ const Nav = styled.nav`
   gap: 4px;
   position: absolute;
   color: darkslategray;
-  right: 8px;
+  right: 1px;
 `;
 
 export default NavBar;
